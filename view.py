@@ -46,6 +46,7 @@ def create_contact():
     new_contact['comment'] = input('    Введите комментарий: ')
     return new_contact
 
+#Добавленная часть
 def find_contact(db: list):
     find_item = input('Введите нужное в поиск: ')
     for i in range(len(db)):
@@ -86,3 +87,5 @@ def delete_contact(db: list):
     deleting_contact = int(input('Введите номер удаляемого контакта: '))
     cont_for_delete = contact_list[deleting_contact][1]
     db.remove(cont_for_delete)
+    
+#Конец добавленной части
